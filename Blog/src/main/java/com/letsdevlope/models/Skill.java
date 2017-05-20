@@ -24,7 +24,9 @@ public class Skill implements java.io.Serializable {
 	private SkillId id;
 	private User user;
 	private String skillName;
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date skillCreated;
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date skillUpdated;
 
 	public Skill() {
